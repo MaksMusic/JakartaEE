@@ -1,20 +1,26 @@
-package com.example.jakartaee;
+package com.example.jakartaee.servlets;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
-@WebServlet(name = "Servlet_tasks", value = "/servlet_tasks")
-public class Servlet_tasks extends HttpServlet {
+//@WebServlet(name = "Servlet1", value = "/Servlet1")
+public class Servlet_info extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        PrintWriter pw = response.getWriter();
+        pw.println("<html><body>");
+        pw.println("<h1>Info</h1>");
+        pw.println("</body></html>");
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+
+
 
     }
 }

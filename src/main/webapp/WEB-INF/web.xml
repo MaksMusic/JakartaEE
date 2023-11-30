@@ -6,10 +6,19 @@
 
     <servlet>
         <servlet-name>servlet_info</servlet-name>
-        <servlet-class>com.example.jakartaee.Servlet_info</servlet-class>
+        <servlet-class>com.example.jakartaee.servlets.Servlet_info</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>servlet_info</servlet-name>
         <url-pattern>/servlet-info</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FirstJsp</servlet-name>
+        <jsp-file>/FirstJsp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstJsp</servlet-name>
+        <url-pattern>/FirstJsp</url-pattern>
     </servlet-mapping>
 </web-app>
