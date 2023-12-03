@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Properties;
 
 public class WorkDataBase {
@@ -39,10 +40,20 @@ public class WorkDataBase {
 
     }
 
-    public   Account getAccount(Long id) {
+    public  String getText(){
+        return "Text is name";
+    }
+
+    public   Account getAccountById(Long id) {
         String sql = "SELECT * FROM account WHERE id = ?";
         Account account = jdbcTemplate.queryForObject(sql, new Object[]{id}, getUserRowMapper());
         return account;
+    }
+
+    public List<Account> getAccounts() {
+        String sql = "SELECT * FROM account";
+        List<Account> accountList = jdbcTemplate.query(sql, getUserRowMapper());
+        return accountList;
     }
 
 

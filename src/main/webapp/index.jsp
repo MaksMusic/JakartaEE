@@ -13,5 +13,7 @@
 <a href="servlet-info">info</a>
 <br/>
 <a href="servlet_tasks">tasks</a>
+<br/>
+<a href="accounts">accounts</a>
 </body>
 </html>

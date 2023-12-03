@@ -6,7 +6,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.util.Date" %>
+<%@ page import="java.util.Date,com.example.jakartaee.database.WorkDataBase" %>
+<%@ page import="com.example.jakartaee.database.Account" %>
+<%@ page import="java.util.List" %>
 <html>
 <head>
     <title>JSP test</title>
@@ -20,6 +22,7 @@
 <p>
     <%=  text  + " " + now %>
 </p>
+
 
 
 <%--генирирует случ число и если оно больше 0.95 выводит сообщение и сэтим числом--%>

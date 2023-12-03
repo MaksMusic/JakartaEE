@@ -1,5 +1,8 @@
 package com.example.jakartaee.database;
 
+import lombok.Data;
+
+@Data
 public class Account {
     private int id;
     private String login;

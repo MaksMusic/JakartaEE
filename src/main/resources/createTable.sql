@@ -6,6 +6,6 @@
 --     task text NOT NULL
 -- );
 
-INSERT INTO account (login, password, task) VALUES ('Tom','12345q','инкапсуляция')
+INSERT INTO account (login, password, task) VALUES ('Tom','12345q','РёРЅРєР°РїСЃСѓР»СЏС†РёСЏ')
 
 
