@@ -15,5 +15,11 @@
 <a href="servlet_tasks">tasks</a>
 <br/>
 <a href="accounts">accounts</a>
+<br/>
+<a href="redirectJsp.jsp">redirectJsp -> account</a>
+<br/>
+<a href="Servlet_forward">redirectServlet -> переводчик</a>
+<br/>
+<a href="Servlet_basket">корзина (нужны параметры)</a>
 </body>
 </html>

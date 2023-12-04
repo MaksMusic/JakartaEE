@@ -13,14 +13,14 @@
 <head>
     <title>accounts</title>
 </head>
-
-
 <body>
 
 <% WorkDataBase workDataBase = new WorkDataBase();%>
-<%= workDataBase.getText()%>
+<%
+    String name = request.getParameter("name");
+%>
+<%= "Hello "+ name + " " + workDataBase.getText()%>
 <input type="button" value="покупка" data-color="green" >
-
 
 </body>
 </html>
