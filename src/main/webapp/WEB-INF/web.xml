@@ -35,9 +35,37 @@
         <servlet-name>redirectJsp</servlet-name>
         <jsp-file>/redirectJsp.jsp</jsp-file>
     </servlet>
+    
     <servlet-mapping>
         <servlet-name>redirectJsp</servlet-name>
         <url-pattern>/redirectJsp</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <servlet-class>com.example.jakartaee.cookies.SetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <url-pattern>/set-cookies-servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <servlet-class>com.example.jakartaee.cookies.GetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <url-pattern>/get-cookies-servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <servlet-class>com.example.jakartaee.cookies.DeleteCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <url-pattern>/delete-cookies-servlet</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
